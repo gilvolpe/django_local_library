@@ -140,3 +140,6 @@ DATABASES['default'].update(db_from_env)
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+ALLOWED_HOSTS = ['web-production-3640.up.railway.app', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://web-production-3640.up.railway.app']
